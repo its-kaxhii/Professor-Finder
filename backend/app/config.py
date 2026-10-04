@@ -62,7 +62,7 @@ class Settings(BaseSettings):
     max_pdf_pages: int = 30
 
     # --- Research workflow ---------------------------------------------------
-    max_professors: int = 40
+    max_professors: int = 150
     max_departments: int = 5
     max_faculty_list_pages: int = 4
     allow_non_institutional_emails: bool = False

@@ -8,7 +8,7 @@
         <p class="text-muted mb-0">
           <a [href]="j.university_url" target="_blank" rel="noopener">{{ j.university_url }}</a>
           · {{ j.fields.length }} field{{ j.fields.length === 1 ? '' : 's' }}
-          · up to {{ j.options.max_professors ?? 40 }} professors
+          · up to {{ j.options.max_professors ?? 150 }} professors
         </p>
       </div>
       <app-status-badge [status]="j.status" />

@@ -29,7 +29,7 @@ export class Home implements OnInit {
   customFields = signal<string[]>([]);
   url = signal('');
   customInput = signal('');
-  maxProfessors = signal(40);
+  maxProfessors = signal(150);
   forceRefresh = signal(false);
   submitting = signal(false);
   error = signal<string | null>(null);
@@ -60,7 +60,7 @@ export class Home implements OnInit {
           this.fields.set(cfg.default_fields);
           this.selected.set(new Set(cfg.default_fields.map((f) => f.label)));
         }
-        this.maxProfessors.set(cfg.max_professors || 40);
+        this.maxProfessors.set(cfg.max_professors || 150);
       },
       error: () => this.error.set('Cannot reach the research server. Is the backend running?'),
     });

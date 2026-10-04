@@ -89,9 +89,10 @@
         <summary>Research options</summary>
         <div class="row g-3 mt-1">
           <div class="col-sm-6">
-            <label class="form-label small" for="maxp">Max professors</label>
+            <label class="form-label small" for="maxp">Max professors (up to 150)</label>
             <input id="maxp" type="number" min="5" max="150" class="form-control" [value]="maxProfessors()"
                    (input)="maxProfessors.set(+value($event))" />
+            <div class="form-text">The number found depends on the university's published faculty directories.</div>
           </div>
           <div class="col-sm-6 d-flex align-items-end">
             <div class="form-check">

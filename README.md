@@ -130,7 +130,7 @@ All secrets stay server-side. See [`.env.example`](.env.example) for every optio
 | `AUTO_CREATE_TABLES` | `true` | Set `false` when using Alembic (Docker does) |
 | `PLAYWRIGHT_ENABLED` | `false` | **Recommended `true`.** Renders JavaScript faculty lists and emails |
 | `OPENAI_API_KEY` / `OPENAI_BASE_URL` / `LLM_MODEL` | — / — / `gpt-4.1-mini` | Optional AI help for unusual page layouts |
-| `MAX_PROFESSORS` / `MAX_DEPARTMENTS` | `40` / `5` | Limits per job (users can change max professors per search) |
+| `MAX_PROFESSORS` / `MAX_DEPARTMENTS` | `150` / `5` | Limits per job (up to 150 professors; actual results depend on published faculty directories) |
 | `ALLOW_NON_INSTITUTIONAL_EMAILS` | `false` | Also show personal emails (e.g. `@163.com`, `@sina.com`) listed on official profiles |
 | `MAX_PAGES_PER_JOB` | `200` | Crawl budget per job |
 | `REQUEST_DELAY_SECONDS` | `1.0` | Per-host politeness delay |
